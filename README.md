@@ -4,10 +4,10 @@ Welcome, here you'll find the slides and complementary info about our Jamf Natio
 
 ### _"Jamf Connect and… Accelerate identity!"_
 
-##### **Virtual JNUC 2020** presentation (Session: JNUC326):
+##### **Virtual JNUC 2020** presentation (Session: JNUC326) - stream date: 2020-09-29 19:00 MESZ / 12:00 PM CDT:
 
-- Listing of all Jamf Nation User Conference 2020 sessions [here](https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/)
-- Our JNUC326 session slides [here](./pdf/JNUC-2020_JNUC326_accelerate_identity.pdf).
+- See a Listing of all Jamf Nation User Conference 2020 sessions[here](https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/)
+- Download our JNUC326 session slides [here](./pdf/JNUC-2020_JNUC326_accelerate_identity.pdf).
 
 ![Virtual JNUC 2020 - Jamf Connect and… Accelerate identity!](img/JNUC326.png)
 
@@ -73,7 +73,7 @@ In Jamf Connect as well as with IDent the "provider" in the OpenID Connect flow 
 The access token applications get from an OAuth 2.0 provider are opaque to the client and in fact will vary in the format returned depending on the identity provider used. The access token you receive from Facebook will be entirely different from the one you get from Google or GitHub.
 OpenID Connect's primary extension of OAuth 2.0 is an additional token returned in the token response referred to as the ID Token. This token is a JSON Web Token signed by the OpenID Connect server, with well known fields for user ID, name, upn, etc.
 
-Here you can seee an example ID token response from an OpenID Connect _(example: drafted from Azure)_:
+Here you can see an example response including an ID Token from an OpenID Connect session _(example: drafted from Azure)_:
 
 ```json
 {
@@ -162,7 +162,7 @@ Some more detailed descriptions (from Azure) can be seen here:
 
 OpenID Connect servers have a discovery mechanism for OAuth 2.0 endpoints, this present the claims supported, and gives indications of other OpenID Connect features used.
 
-The Discovery URL details will looks as displayed in this example:
+The Discovery URL details may look as outlined in this example:
 `https://login.microsoftonline.com/5905dcf2-2873-4dfb-87fc-c8165db8cf4c/v2.0/.well-known/openid-configuration`
 
 ```json
@@ -221,7 +221,7 @@ The Discovery URL details will looks as displayed in this example:
 }
 ```
 
-Some more detailed description:
+Some more detailed descriptions:
 
 - <https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc>
 
