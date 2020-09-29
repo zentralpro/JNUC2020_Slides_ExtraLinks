@@ -49,7 +49,7 @@ In this listing you can find some info that may help to get more in-depth with J
 
 OpenID Connect is a layer build on top of the OAuth 2.0 protocol.
 
-This section strives to give a concise overview to the OpenID Connect protocol in relation to Jamf Connect _(examples: Azure as IdP)_.
+This section strives to give a concise overview to the OpenID Connect protocol in relation to Jamf Connect _(all examples: Azure used as IdP)_.
 
 ## OAuth 2.0
 
@@ -73,7 +73,7 @@ In Jamf Connect as well as with IDent the "provider" in the OpenID Connect flow 
 The access token applications get from an OAuth 2.0 provider are opaque to the client and in fact will vary in the format returned depending on the identity provider used. The access token you receive from Facebook will be entirely different from the one you get from Google or GitHub.
 OpenID Connect's primary extension of OAuth 2.0 is an additional token returned in the token response referred to as the ID Token. This token is a JSON Web Token signed by the OpenID Connect server, with well known fields for user ID, name, upn, etc.
 
-Here you can seee an example ID token response from an OpenID Connect (example from Azure):
+Here you can seee an example ID token response from an OpenID Connect _(example: drafted from Azure)_:
 
 ```json
 {
@@ -81,7 +81,7 @@ Here you can seee an example ID token response from an OpenID Connect (example f
   "expires_in": "3599",
   "expires_on": "1601303638",
   "ext_expires_in": "3599",
-  "id_token": "aznCND9ct6zu8kVkXiSJB1SBrURkP40ZFDI7kqZcSuNP0aWR0OAEIHcB9Y2nRKXA6L2VhHMbmDDO4gzaw0DifMTzT5NItgRYo3WQ0e5DcHZBj4igYBQtyOBk6ntTE3rlFJC.Hzgajt8QkmlK6ugGUXXSKg50v7jzfylwqR7eZwPO0l6muKndbmGN2mo0HHOwFyBbXC1ihtIq4dEIiC6rHCcB1QXf8EBeANHFIVUnsaq3C1RypWpdjCFkOXa1l5arRJw5tYJuh7PVKRlf3A0L5tD3jV6xG34q2qepuGuxNv9YbxEel89eifO2N5GqA14RaTcNqiriWTMixnla9pXsGAKt4KH76lDscr4vceFwW9G9QnMmN7pcT3EuzMUuq07Hl7nIOPkNYgQm9n2wAEVK6wCk1LL68ylljnAKdGcXFVfhdEz9yiIw2oLikUsHRJKbez0dEWD0hXVSxQYgmvDZ6ZGnhmbMzNZQqB5vDevct5Oj3HDkEudOBEEVXbkIm1Xj8CieB5ftnnOLiliLW7maM17SHCeImcts2EEB5KRcXMXymoI2O5JZUFExfn8GozKxdC7Im7NHCRP6hd3ZEsrsEMPaipFesQmBCnBM7QnDfNZeLYRSI2Q6Bvlrkh19oecSEfAj3oYEvTPzhStw9df5k2iJ3DFPiZXFzHulGPgsOs6Pb3LsHRzw8d1ZmvBUTV2x3buiFGIVvnjlyQafyNKKY1bYUlqTGD56H31N6i6JA2CUNL2hGWUTv2rKXfHAnISoNemGr7UhXVgqGlt6Y1x7hFQxxtlEWKXkxMTPbDN9ge5ZafU21TZsjph2TUSivSpvupErasvjaTKiXIGvtkpCAvZVOWhllkxcl6Gdz26MkljEfAhJDhIW2Ro4BLvmhQAPWx5awlaBUAQoORyuoYFyp2RmnaSsxiTHJqP0b9LzqQgMqhfR7klT4pKeGMyUT90BOCjJ0EX4YeISw3VITkWhWUSq7dAeJKybRR0AimlkbVe99RTnuDL5DRS5WLdFOBZFra83i0QclQykRfF5m3FZWdj2NxdPNUi36BHWRGo5eV6hL8glhPf1MPglVO52TUYNcZFQkFEJ77xAoLAnpKdrGe53Nl6FDzYEAygaO4CyakNpuaR23dlw0VczQtTZZg2NsJHwPTI1qN44ASJ2DrPtNGvQHquLdFC2QdWTOBfM5std9gfAnzARSs6BSnDrF9VGtdby5KXZOQFXCr5nsTawRZa3SCp1Yy4ZY1D7C30ahpEdA5CZEjd0BygBFcyWJP74RwsHWpiEcWdzyIpd0FjOvBNZeYl4uo7hNXf2NJ6GmYfYN5EmILYVNL0WHK2IRibsUrbueryRBAW33QhVvQu8XlDWWQHGsJXTUmGzHCgLCZVlOvrEsCY4BGSruj5FxDYpkCzpwAdw0gLydIV34YjUT1hBFWcwVn14h5yRqyNpFs4SZba28PyMClIBraeL7dhgP2NwqoYuSN.2J0N3lm4L7bScqh8kCSQ0X6qiXRDGSoODMC6DrTwg2CAIdJzTnS29yShZ3wqiaLlwC7wdxX4TpLgriQvhbFV4p0YHDMJeq7IzgMH62HJNPqVydP2PdNUnUnmxGygifnm6dtVmlgMdf6LsOTeONfZiDfDuYiovzhsKbyZVvwPxuoyjLIbseHvPpYuysFHOhrfxjIba3Gh68EKotzdYv9QZ1ap7pVYnM0kcMlQ9a0vcGuoxElmHLOIlm3lg6f8f3Y2AOV1hyU2mo2Ow33Ingf6JZ9-Pnns5QXrxyUx-mANbBheJlN18IOtj1n71A3H7NdkFR2H4UV2wJsfCR_Slam",
+  "id_token": "aznCND9ct6zu8kVkXiSJB1SB<REMOVED_FOR_CLARITY>E3rlFJC.Hzgajt8QkmlK6ugGUXXSKg50v7jzfylwqR<REMOVED_FOR_CLARITY>uSN.2J0N3<REMOVED_FOR_CLARITY>fCR_Slam",
   "id_token_decoded": {
     "amr": ["pwd", "mfa"],
     "aud": "5905dcf2-2873-4dfb-87fc-c8165db8cf4c",
@@ -134,7 +134,7 @@ Here you can seee an example ID token response from an OpenID Connect (example f
     "sub": "XU4WmgjxUh6ptVcvmYugjXyy40bUVcTNHJaX0FIoZs2kw6KdPC",
     "tid": "aa2aee83-f8d2-4659-9f9e-a8af4723b52d",
     "unique_name": "jappleseed@example.com",
-    "upn": "jappleseed@example.com",
+    "email": "jappleseed@example.com",
     "uti": "fXRchA91c0Ga8n1RUH6CAA",
     "ver": "1.0",
     "wids": "[\"cc91b6f4-a01d-43b2-8110-3553431a047d\",\"2e65f4bd-a220-4864-abaf-c9efa28e8b5c\"]"
