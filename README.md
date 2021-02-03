@@ -4,7 +4,7 @@ Welcome, here you'll find the slides and complementary info about our Jamf Natio
 
 ### _"Jamf Connect and… Accelerate identity!"_
 
-Find the session on YouTube here:https://www.youtube.com/watch?v=EOgkz_jSPo4
+Find the JNUC 2020 session on YouTube [here](https://www.youtube.com/watch?v=EOgkz_jSPo4)
 
 ##### **Virtual JNUC 2020** presentation (Session: JNUC326) - stream date: 2020-09-29 19:00 MESZ / 12:00 PM CDT:
 
